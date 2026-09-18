@@ -1,0 +1,17 @@
+# Phase 0-1 dependencies.
+#
+# NOTE on CUDA/PyTorch: `pip install ultralytics` will pull in a CPU-only
+# build of torch by default on some systems. For GPU acceleration on the
+# RTX 4050, install the CUDA-enabled PyTorch build FIRST, from
+# https://pytorch.org/get-started/locally/ (pick your CUDA version),
+# then install the rest of this file. See README.md "NVIDIA GPU setup".
+
+ultralytics>=8.4.138
+opencv-python>=4.9.0
+python-dotenv>=1.0.1
+numpy>=1.26.4
+
+# Optional: enables real GPU utilization % in the on-screen overlay.
+# If not installed, the app still runs and simply omits utilization %,
+# it will not fabricate a number.
+pynvml>=11.5.0
